@@ -34,7 +34,7 @@ function App() {
 
     setLoading(true);
     try {
-      const response = await axios.post(`${API_URL}/generate-single`, {
+    await axios.post(`${API_URL}/generate-single`, { 
         prompt: aiPrompt
       });
       
